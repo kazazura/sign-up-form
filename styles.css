@@ -4,5 +4,162 @@
         url('fonts/webfontkit-20250403-042853/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+:root {
+    --general-color: #596D48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    background-color: hsl(0, 0%, 95%);
+}
+
+a {
+    color: white;
+}
+
+.left-wrapper {
+    background-color: var(--general-color);
+    display: flex;
+    min-width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+}
+
+.logo-container>p {
+    color: white;
+    font-size: 6rem;
+    font-family: 'norsebold';
+}
+
+.odin-logo {
+    width: 100px;
+    height: auto;
+}
+
+.credits {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.right-wrapper-header>p,
+.right-wrapper-header>p>em {
+    font-size: 1.5rem;
+}
+
+.right-wrapper-header {
+    width: 90%;
+    text-align: left;
+    margin-top: 12%;
+    padding: 0px 50px;
+    font-weight: bold;
+}
+
+.right-wrapper-header>p+p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.fields {
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 5px #dbdbdb;
+}
+
+.fields>p {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fields>div,
+.fields>p {
+    margin-left: 50px;
+}
+
+.field {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.input-fields {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border:1px solid #E5E7EB;    
+}
+
+input:focus {
+    border:1px solid blue; 
+    outline:none;
+}
+
+input[type="password"]:invalid {
+    border:1px solid red; 
+    outline:none;
+}
+
+button {
+    font-size: 1.1rem;
+    margin: 30px 50px;
+    border-style: none;
+    background-color: var(--general-color);
+    color: white;
+    padding: 15px 60px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #dbdbdb;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #75925c;
+}
+
+button:active {
+    background-color: #39462e;
+}
+
+.login {
+    margin-left: 50px;
+}
+
+.login-link {
+    font-size: 1.1rem;
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
