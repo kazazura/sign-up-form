@@ -28,7 +28,9 @@ a {
 }
 
 .left-wrapper {
-    background-color: var(--general-color);
+    background-image: url(images/martin-martz-npdGyujDvaU-unsplash.jpg);
+    background-size: cover;
+    /* background-color: var(--general-color); */
     display: flex;
     min-width: 30%;
     height: 100vh;
@@ -42,12 +44,19 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 35%;
+    padding: 20px 0px;
+    background-color: rgb(0 0 0 / 0.3);
+    color: #fff;
 }
 
 .logo-container>p {
     color: white;
     font-size: 6rem;
     font-family: 'norsebold';
+}
+
+.logo-background {
+    background-color: red;
 }
 
 .odin-logo {
@@ -119,17 +128,18 @@ input {
     padding: 5px;
     font-size: 1.1rem;
     border-radius: 5px;
-    border:1px solid #E5E7EB;    
+    border: 1px solid #E5E7EB;
 }
 
 input:focus {
-    border:1px solid blue; 
-    outline:none;
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 3px 5px #dbdbdb;
 }
 
 input[type="password"]:invalid {
-    border:1px solid red; 
-    outline:none;
+    border: 1px solid red;
+    outline: none;
 }
 
 button {
